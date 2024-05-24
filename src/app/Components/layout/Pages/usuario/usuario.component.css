@@ -1,0 +1,30 @@
+
+table{
+    width: 100%;
+}
+
+.mat-form-field{
+    font-size: 14px;
+    width: 100%;
+}
+
+.custom-button {
+    background-color: #19b114; 
+    color: white; 
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-field {
+    margin-left: 16px; 
+    flex-grow: 1; 
+  }
+  
+.dashboard-card-content {
+    margin-top: 40px;
+  }
+  
+ 

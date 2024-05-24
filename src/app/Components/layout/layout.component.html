@@ -1,0 +1,41 @@
+<mat-toolbar class="yellow-toolbar" color="yellow">
+    <mat-toolbar-row>
+        <h1>Control Z</h1>
+    
+        <button mat-icon-button (click)="sidenav.toggle();">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <span style="flex: 1 1 auto;"></span>
+        <label style="font-size: 14px; margin-right: 20px;">
+            {{correoUsuario}}
+        </label>
+
+        <button mat-icon-button class="logout-button" (click)="cerrarSesion()">
+            <mat-icon>logout</mat-icon>
+        </button>
+       
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav opened="true" mode="side" class="custom-sidenav">
+        <mat-nav-list>
+
+            <mat-list-item *ngFor="let menu of listaMenus" [routerLink]="menu.url">
+                <mat-icon mat-list-icon>{{menu.icono}}</mat-icon>
+                <div mat-line>{{menu.nombre}}</div>
+            </mat-list-item>
+            <div style="display: flex; justify-content: center;">
+                <img src="assets/Logo.png" alt="Logo" style="height: 165px;">
+            </div>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <!-- Contenido principal a la derecha del menú -->
+    <mat-sidenav-content class="custom-sidenav-content">
+        <div style="height: 90vh;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

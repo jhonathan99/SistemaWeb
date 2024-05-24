@@ -1,0 +1,19 @@
+.full-width{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px; 
+  }
+
+  .custom-button {
+    background-color: #19b114; 
+    color: white; 
+}

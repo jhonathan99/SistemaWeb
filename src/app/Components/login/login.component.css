@@ -1,0 +1,40 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1b1843;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  mat-card-footer {
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 30px; /* Tamaño de fuente más grande */
+    margin-bottom: 30px; /* Espacio inferior */
+  }
+  

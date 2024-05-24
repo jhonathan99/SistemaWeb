@@ -1,0 +1,26 @@
+.logout-button {
+    background-color: transparent;
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+.logout-button:hover {
+    color: #f00;
+}
+.yellow-toolbar {
+    background-color:  #1b1843; 
+    color: #fff; 
+  }
+
+
+.custom-sidenav {
+    width: 200px;
+    background-color: #ffffff;
+
+  }
+
+.custom-sidenav-content {
+    background-color: #3451ab; /* Cambia el color de fondo del mat-sidenav-content */
+}
